@@ -62,3 +62,23 @@ button {
 button:hover {
   background-color: #2980b9;
 }
+
+/* ---- Versión 4: mensajes dinámicos ---- */
+.contador {
+  display: block;
+  color: #7f8c8d;
+  margin-top: 4px;
+}
+
+.mensaje {
+  min-height: 24px;
+  font-weight: bold;
+}
+
+.mensaje.ok {
+  color: #27ae60;
+}
+
+.mensaje.error {
+  color: #c0392b;
+}

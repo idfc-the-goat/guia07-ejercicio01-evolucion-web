@@ -16,9 +16,21 @@
 
       <h2>Registro de visitante</h2>
       <p>Ingrese su nombre:</p>
-      <input type="text" id="nombre" placeholder="Escribe tu nombre" />
+      <input
+        type="text"
+        id="nombre"
+        placeholder="Escribe tu nombre"
+        maxlength="30"
+        oninput="actualizarContador()"
+      />
       <button onclick="saludar()">Saludar</button>
-      <p id="resultado"></p>
+      <small id="contador" class="contador">0 / 30</small>
+      <p id="resultado" class="mensaje"></p>
+
+      <h2>Validar correo</h2>
+      <input type="email" id="correo" placeholder="Ingrese su correo" />
+      <button onclick="validarCorreo()">Validar correo</button>
+      <p id="mensajeCorreo" class="mensaje"></p>
     </main>
 
     <!-- Enlace al archivo JavaScript -->
